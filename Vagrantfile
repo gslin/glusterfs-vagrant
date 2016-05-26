@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
             vb.cpus = 2
             vb.customize [
                 'createhd',
-                '--filename', __dir__ + 'gfs1.vdi',
+                '--filename', __dir__ + '/gfs1.vdi',
                 '--size', 256,
             ]
             vb.customize [
