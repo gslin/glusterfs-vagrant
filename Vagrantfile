@@ -9,6 +9,8 @@ Vagrant.configure(2) do |config|
         c.vm.provision "shell", path: "gfs.sh"
         c.vm.network "private_network", ip: "192.168.50.101"
         c.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
             vb.customize [
                 'createhd',
                 '--filename', '/home/gslin/work/vagrant/general/gfs1.vdi',
@@ -30,6 +32,8 @@ Vagrant.configure(2) do |config|
         c.vm.provision "shell", path: "gfs.sh"
         c.vm.network "private_network", ip: "192.168.50.102"
         c.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
             vb.customize [
                 'createhd',
                 '--filename', '/home/gslin/work/vagrant/general/gfs2.vdi',
@@ -51,6 +55,8 @@ Vagrant.configure(2) do |config|
         c.vm.provision "shell", path: "gfs.sh"
         c.vm.network "private_network", ip: "192.168.50.103"
         c.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
             vb.customize [
                 'createhd',
                 '--filename', '/home/gslin/work/vagrant/general/gfs3.vdi',
@@ -72,6 +78,8 @@ Vagrant.configure(2) do |config|
         c.vm.provision "shell", path: "gfs.sh"
         c.vm.network "private_network", ip: "192.168.50.104"
         c.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
             vb.customize [
                 'createhd',
                 '--filename', '/home/gslin/work/vagrant/general/gfs4.vdi',
@@ -93,6 +101,8 @@ Vagrant.configure(2) do |config|
         c.vm.provision "shell", path: "gfs.sh"
         c.vm.network "private_network", ip: "192.168.50.105"
         c.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
             vb.customize [
                 'createhd',
                 '--filename', '/home/gslin/work/vagrant/general/gfs5.vdi',
