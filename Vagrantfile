@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
             vb.cpus = 2
             vb.customize [
                 'createhd',
-                '--filename', '/home/gslin/work/vagrant/general/gfs1.vdi',
+                '--filename', __dir__ + 'gfs1.vdi',
                 '--size', 256,
             ]
             vb.customize [
@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
                 '--port', 1,
                 '--device', 0,
                 '--type', 'hdd',
-                '--medium', '/home/gslin/work/vagrant/general/gfs1.vdi',
+                '--medium', __dir__ + '/gfs1.vdi',
             ]
         end
     end
@@ -36,7 +36,7 @@ Vagrant.configure(2) do |config|
             vb.cpus = 2
             vb.customize [
                 'createhd',
-                '--filename', '/home/gslin/work/vagrant/general/gfs2.vdi',
+                '--filename', __dir__ + '/gfs2.vdi',
                 '--size', 256,
             ]
             vb.customize [
@@ -45,7 +45,7 @@ Vagrant.configure(2) do |config|
                 '--port', 1,
                 '--device', 0,
                 '--type', 'hdd',
-                '--medium', '/home/gslin/work/vagrant/general/gfs2.vdi',
+                '--medium', __dir__ + '/gfs2.vdi',
             ]
         end
     end
@@ -59,7 +59,7 @@ Vagrant.configure(2) do |config|
             vb.cpus = 2
             vb.customize [
                 'createhd',
-                '--filename', '/home/gslin/work/vagrant/general/gfs3.vdi',
+                '--filename', __dir__ + '/gfs3.vdi',
                 '--size', 256,
             ]
             vb.customize [
@@ -68,7 +68,7 @@ Vagrant.configure(2) do |config|
                 '--port', 1,
                 '--device', 0,
                 '--type', 'hdd',
-                '--medium', '/home/gslin/work/vagrant/general/gfs3.vdi',
+                '--medium', __dir__ + '/gfs3.vdi',
             ]
         end
     end
@@ -82,7 +82,7 @@ Vagrant.configure(2) do |config|
             vb.cpus = 2
             vb.customize [
                 'createhd',
-                '--filename', '/home/gslin/work/vagrant/general/gfs4.vdi',
+                '--filename', __dir__ + '/gfs4.vdi',
                 '--size', 256,
             ]
             vb.customize [
@@ -91,7 +91,7 @@ Vagrant.configure(2) do |config|
                 '--port', 1,
                 '--device', 0,
                 '--type', 'hdd',
-                '--medium', '/home/gslin/work/vagrant/general/gfs4.vdi',
+                '--medium', __dir__ + '/gfs4.vdi',
             ]
         end
     end
@@ -105,7 +105,7 @@ Vagrant.configure(2) do |config|
             vb.cpus = 2
             vb.customize [
                 'createhd',
-                '--filename', '/home/gslin/work/vagrant/general/gfs5.vdi',
+                '--filename', __dir__ + '/gfs5.vdi',
                 '--size', 256,
             ]
             vb.customize [
@@ -114,7 +114,7 @@ Vagrant.configure(2) do |config|
                 '--port', 1,
                 '--device', 0,
                 '--type', 'hdd',
-                '--medium', '/home/gslin/work/vagrant/general/gfs5.vdi',
+                '--medium', __dir__ + '/gfs5.vdi',
             ]
         end
     end
